@@ -1,0 +1,17 @@
+{
+  "name": "logic",
+  "author": {
+    "email": "pro.nathaelbonnal@gmail.com",
+    "name": "Bonnal Nathael",
+    "url": "https://github.com/NathaelB"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --quiet --transpile-only --clear --rs -- ./src/main.ts"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}
