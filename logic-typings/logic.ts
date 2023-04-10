@@ -10,6 +10,7 @@ declare module '@ioc:Reforged/Logic' {
   export type RowCondition = {
     uid: string
     field: string
+    type: 'select' | 'input'
     operator: OperatorType
     value: string
   }
@@ -18,8 +19,7 @@ declare module '@ioc:Reforged/Logic' {
 
   export interface ConditionContract {
     uid: string
-    conjunction: Conjunction
-    nodes: Couple[]
+    kind: Conjunction
+    nodes: (RowCondition | ConditionContract)[]
   }
-
 }

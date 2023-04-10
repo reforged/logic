@@ -8,4 +8,6 @@
  */
 
 /// <reference path="./logic.ts" />
-/// <reference path"./tree.ts" />
+/// <reference path="./tree.ts" />
+/// <reference path="./operator.ts" />
+/// <reference path="./formule.ts" />
