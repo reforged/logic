@@ -9,3 +9,4 @@
 
 export { Logic } from './src/logic'
 export { Tree } from './src/tree'
+export { Formule } from './src/formule'
