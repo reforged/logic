@@ -1,6 +1,6 @@
 import { TreeContract } from '@ioc:Reforged/Tree'
 
-export default class Tree<T> {
+export class Tree<T> {
   private readonly tree: TreeContract<T>
 
   constructor(tree: TreeContract<T>) {
