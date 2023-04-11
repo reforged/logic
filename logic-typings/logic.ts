@@ -22,4 +22,9 @@ declare module '@ioc:Reforged/Logic' {
     kind: Conjunction
     nodes: (RowCondition | ConditionContract)[]
   }
+
+  export type Un = 1
+  export type Zero = 0
+
+  export type valVerite = Un | Zero
 }

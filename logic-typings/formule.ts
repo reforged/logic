@@ -1,5 +1,5 @@
 declare module '@ioc:Reforged/Formule' {
-  import { Conjunction } from '@ioc:Reforged/Logic'
+  import { Conjunction, OperatorType } from '@ioc:Reforged/Logic'
   export type Type =
     | 'input'
     | 'select'
@@ -7,7 +7,8 @@ declare module '@ioc:Reforged/Formule' {
   export type DataSymb = {
     uid: string
     value: string
-    operator: string
+    field: string
+    operator: OperatorType
     type: Type
   }
 
