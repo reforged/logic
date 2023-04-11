@@ -1,14 +1,10 @@
-import { ConditionContract } from '@ioc:Reforged/Logic'
+import { ConditionContract, valVerite } from '@ioc:Reforged/Logic'
 import { TreeContract } from '@ioc:Reforged/Tree'
 import { Tree } from './tree'
-import {Formule} from "./formule";
-import {Prop} from "@ioc:Reforged/Formule";
-import {TokenInput} from "./token/token-input";
-import {TokenSelect} from "./token/token-select";
-
-type Un = 1
-type Zero = 0
-type valVerite = Un | Zero
+import { Formule } from './formule'
+import { Prop } from '@ioc:Reforged/Formule'
+import { TokenInput } from './token/token-input'
+import { TokenSelect } from './token/token-select'
 
 function intSymb<T> (prop: Prop, data: T): valVerite {
   if (prop.kind !== 'symb') return 0
@@ -58,24 +54,11 @@ export class Logic<T> {
     return this.formule
   }
 
-  public getDepth () {
-    return this.tree.calculateDepth(this.tree.getTree())
-  }
-
-  public valVerite () {
-    const li = []
-    const fn = (prop: Prop) => {
-     switch (prop.kind) {
-       case "symb":
-         return [prop.data.value]
-       case "or":
-       case "and":
-         return [...fn(prop.left), ...fn(prop.right)]
-     }
-    }
-    return fn(this.formule.getProposition())
-  }
-
+  /**
+   * Allows for an interpretation of
+   * type T to return the truth value
+   * @param data
+   */
   public execute (data: T) {
     const fn = (prop: Prop) => {
       switch (prop.kind) {
@@ -89,5 +72,17 @@ export class Logic<T> {
     }
 
     return fn(this.getFormule().getProposition())
+  }
+
+  /**
+   * Returns an array of type T where each item
+   * checks for an interpretation of the truth value.
+   *
+   * @return T[]
+   */
+  public filter (): T[] {
+    return this.data.filter((item) => {
+      if (this.execute(item)) return item
+    })
   }
 }
