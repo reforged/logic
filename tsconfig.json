@@ -1,5 +1,16 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true
-  }
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "declaration": false
+  },
+  "files": [
+    "./src/logic.ts"
+  ],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib"]
 }
