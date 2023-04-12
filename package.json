@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc build"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "@types/node": "^18.15.11",
     "del-cli": "^5.0.0",
