@@ -1,21 +1,21 @@
 # Reforged - Logic
 
-<h3 align="center">Le moyen le plus simple pour filtrer vos données</h3>
-<p align="center">Filtre tes données par rapport à ses attributs de manière simple et rapide ⚡</p>
+<h3 align="center">The easiest way to filter your data</h3>
+<p align="center">Filter your data according to its attributes in a quick and easy way ⚡</p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg?style=flat-square" alt="work in progress badge">
 </p>
 
 
-**Reforged Logic** est une bibliothèque de couche d'abstraction open-source qui facilite
-le traitement de données, permettant de filtrer un jeu de données en utilisant des principes de logiques.
-**Reforged Logic** est écrit en Typescript.
+**Reforged Logic** is an open-source abstraction layer library that facilitates
+processing, allowing you to filter a dataset using logic principles.
+**Reforged Logic** is written in Typescript.
 
 - Website: https://reforged.fr
 - Community: [Join us](https://discord.gg/ZAGPhS6BKZ) on Discord
 
-Remarque : nous prenons très au sérieux la fiabilité de Logic et la confiance de nos utilisateurs. Si vous pensez avoir découvert un problème de sécurité dans le package `Logic`, veuillez nous le signaler dans la partie issues du repository.
+Note: we take the reliability of Logic and the trust of our users very seriously. If you think you have discovered a security problem in the `Logic` package, please report it to us in the issues section of the repository.
 
 ## ✨ Features
 
