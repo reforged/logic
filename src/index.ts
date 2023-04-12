@@ -1,5 +1,5 @@
 /*
- * @reforged/logic
+ * @reforged/lucid
  *
  * (c) Bonnal Nathaël <pro.nathaelbonnal@gmail.com>
  *
@@ -7,3 +7,6 @@
  * file that was distributed with this source code.
  */
 
+export { Logic } from './logic'
+export { Tree } from './tree'
+export { Formule } from './formule'
